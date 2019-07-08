@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sell_Items2">
+
+    <TextView
+        android:id="@+id/textView_productnameinsell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView_productnameinsell"
+        android:layout_marginTop="72dp"
+        android:text="Sell it to computer at an estimate price of:"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_selltocomputer"
+        android:onClick="onselltocomputer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="140dp"
+        android:text="Sell to computer" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView_productnameinsell"
+        android:layout_marginTop="201dp"
+        android:text="Sell it in market by setting your own price."
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText_marketprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="100" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="-97dp"
+        android:layout_toStartOf="@+id/button_selltocomputer"
+        android:text="Price"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_sellinmarket"
+        android:layout_width="wrap_content"
+        android:onClick="onselltomarket"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button_selltocomputer"
+        android:layout_marginBottom="189dp"
+        android:text="Sell in market" />
+
+    <TextView
+        android:id="@+id/textview_sellingitemcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="95dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+</RelativeLayout>

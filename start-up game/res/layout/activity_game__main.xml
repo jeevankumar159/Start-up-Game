@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game_Main">
+
+    <Button
+        android:id="@+id/button_Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="135dp"
+        android:onClick="onlogout"
+        android:text="LogOut" />
+
+    <Button
+        android:id="@+id/button_gotocreatecompany"
+        android:layout_width="134dp"
+        android:layout_height="114dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="90dp"
+        android:text="Create Company"
+        android:onClick="oncreatecompanybutton"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_manageCompanies"
+        android:layout_width="134dp"
+        android:layout_height="111dp"
+        android:onClick="onmanagecompanybutton"
+        android:layout_alignEnd="@+id/button_Settings"
+        android:layout_alignTop="@+id/button_gotocreatecompany"
+        android:text="Manage Companies"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_Invest"
+        android:layout_width="141dp"
+        android:layout_height="109dp"
+        android:layout_alignStart="@+id/button_gotocreatecompany"
+        android:layout_centerVertical="true"
+        android:text="Invest "
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_Settings"
+        android:layout_width="142dp"
+        android:layout_height="107dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/button_Logout"
+        android:text="Settings"
+        android:textSize="18sp" />
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main">
+
+
+    <ImageButton
+        android:id="@+id/button_loginwithgoogle"
+        android:layout_width="332dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="113dp"
+        android:onClick="onGooglesignin"
+        android:src="@drawable/login_with_google"
+        android:scaleType="center"/>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button_loginwithgoogle"
+        android:layout_marginBottom="34dp"
+        android:onClick="onlogin"
+        android:text="Login"
+        />
+
+    <Button
+        android:id="@+id/button_createuser"
+        android:onClick="oncreateuser"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button_loginwithgoogle"
+        android:layout_alignTop="@+id/button_login"
+        android:text="CreateUser" />
+
+    <ImageButton
+        android:id="@+id/button_loginwithfacebook"
+        android:layout_width="329dp"
+        android:layout_height="89dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="191dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/login_with_facebook" />
+
+</RelativeLayout>
